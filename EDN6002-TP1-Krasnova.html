@@ -1,74 +1,1113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="fr" xml:lang="fr">
+
 <head>
-	<meta charset="UTF-8" />
-	<title>TP1...</title>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ilona Krasnova" />
+    <title>Évaluation du logiciel Affinity</title>
 </head>
+
 <body>
-    <h1>TP1...</h1>
-    <section id="crit-gen">
-        <h2>1. Critères généraux</h2>
-        <h3>Description</h3>
-            <!-- 
-            • Description générale du logiciel. Justification de la pertinence du logiciel pour l'édition numérique.
-            • Type de logiciel (libre, propriétaire, etc.)
-            • Type de licence (fixe, libre, académique, mixte, etc.)
-            • Coût
-            • Langage de programmation (Python, Java, etc.)
-            -->
-        <h3>Maturité du logiciel</h3>
-            <!-- 
-            • Âge du logiciel
-            • Année en affaires de l'entreprise
-            • Nombre de mois depuis la dernière mise à jour
-            • Le logiciel est-il encore supporté par le développeur ou le créateur
-            -->
-        <h3>Interopérabilité</h3>
-            <!-- 
-            Critères qui impliquent la capacité du logiciel à s'harmoniser avec le système déjà en place et sa faculté de
-            fonctionner conjointement avec d'autres ressources logicielles et matérielles.
-            • Compatibilité avec les plateformes et systèmes d'exploitation
-            • Intégration Web
-            • Intégration à d'autres applications
-            • Dépendances logicielles ou matérielles
-            -->
-        <h3>Soutien technique</h3>
-            <!-- 
-            Critères qui mesurent l'aide disponible pour les utilisateurs du logiciel.
-            • Accès à une version de démonstration
-            • Assistance technique
-            • Documentation
-            • Tutoriel
-            • Communauté
-            -->
-    </section>
-    <section id="crit-tech">
-        <h2>2. Critères techniques</h2>
-        <h3>Fonctionnalités</h3>
-            <!-- 
-            • Description des fonctionnalités du logiciel (veuillez être le plus exhaustif possible)
-            Utilisabilité
-            • Facilité d'installation
-            • Facilité d'utilisation
-            • Facilité d'apprentissage
-            -->
-    </section>
-    <section id="eval">
-        <h2>3. Évaluation</h2>
-            <!-- 
-            • Points positifs
-            • Points négatifs
-            • Autres remarques
-            -->
-    </section>
-    <section id="capt-ecrans">
-        <h2>4. Copies d'écrans</h2>
-    </section>
-    <section id="references">
-        <h2>5. Références</h2>
+    <h1>Évaluation du logiciel Affinity</h1>
+    <aside>
+        <!-- https://stackoverflow.com/questions/74769492/which-html-tag-will-be-appropriate-for-the-article-abstract -->
+        <p>
+            Le logiciel Affinity propose des fonctionnalités de mise en pages et de typographie qui se révèlent
+            pratiques pour l’édition numérique, en plus de proposer une exportation vers les formats PDF et EPUB. Il y a
+            cependant des limites à ces fonctionnalités : ainsi, les balises des fichiers PDF exportés ne respectent pas
+            toutes les normes d’accessibilité universelle, et l’utilisation du logiciel nécessite un compte Canva.
+        </p>
+    </aside>
+    <nav>
         <ul>
-            <li></li>
+            <li>
+                <a href="#criteres-generaux">1. Critères généraux</a>
+                <ul>
+                    <li><a href="#description">Description</a></li>
+                    <li><a href="#licence">Modèle de licence (freemium)</a></li>
+                    <li><a href="#maturite">Maturité (ligne de temps)</a></li>
+                    <li><a href="#interoperabilite">Interopérabilité</a></li>
+                    <li><a href="#soutien-technique">Soutien technique</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#criteres-techniques">2. Critères techniques</a>
+                <ul>
+                    <li><a href="#fonctionnalites">Fonctionnalités</a></li>
+                    <li><a href="#utilisabilite">Utilisabilité</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#evaluation">3. Évaluation</a>
+                <ul>
+                    <li><a href="#points-positifs">Points positifs</a></li>
+                    <li><a href="#points-negatifs">Points négatifs</a></li>
+                    <li><a href="#autres-remarques">Autres remarques</a></li>
+                </ul>
+            </li>
+            <li><a href="#capt-ecrans">4. Copies d’écrans</a></li>
+            <li><a href="#references">5. Références</a></li>
         </ul>
-    </section>
+    </nav>
+    <main>
+        <section id="criteres-generaux">
+            <h2>1. Critères généraux</h2>
+            <!-- 
+      • Description générale du logiciel. Justification de la pertinence du logiciel pour l'édition numérique.
+      • Type de logiciel (libre, propriétaire, etc.)
+      • Type de licence (fixe, libre, académique, mixte, etc.)
+      • Coût
+      • Langage de programmation (Python, Java, etc.)
+      -->
+            <h3 id="description">Description</h3>
+            <p>
+                Affinity est un logiciel de conception graphique propriétaire qui a été conçu en C++ et Objective-C
+                <a href="#ref-01">[1]</a><a href="#ref-02">[2]</a>.
+                Il réunit trois studios qui étaient auparavant des logiciels distincts :
+            </p>
+            <ol>
+                <li>
+                    <strong>Vecteur</strong> pour les images vectorielles (redimensionnables sans perte de qualité),
+                </li>
+                <li>
+                    <strong>Pixel</strong> pour la retouche d’images et de photos et
+                </li>
+                <li>
+                    <strong>Mise en page</strong> pour l’insertion d’images et l’édition de texte avec des outils
+                    typographiques de pointe.
+                </li>
+            </ol>
+            <p>
+                Le studio Mise en page, grâce aux options d’exportation en PDF et EPUB, rend le logiciel pertinent pour
+                l’édition numérique.
+            </p>
+            <h3 id="licence">Modèle de licence (freemium)</h3>
+            <p>
+                Toutes les fonctions, sauf celles qui utilisent l’IA, sont offertes avec un compte Canva gratuit.
+            </p>
+            <table>
+                <caption>Tarification et licences d’Affinity</caption>
+                <thead>
+                    <tr>
+                        <th>Licence</th>
+                        <th>Prix</th>
+                        <th>Contenu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gratuite (individuelle)</td>
+                        <td>0 $</td>
+                        <td>
+                            Fonctions de base, liée à un compte
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Éducation</td>
+                        <td>0 $</td>
+                        <td>
+                            Gratuit pour le personnel et les élèves des écoles primaires et secondaires
+                            <a href="#ref-03">[3]</a>
+                        </td>
+                    <tr>
+
+                        <td>Pro (individuelle ou équipes)</td>
+                        <td>18 $/mois ou 142 $/an</td>
+                        <td>
+                            Outils d’IA, 5 identités visuelles
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Organismes sans but lucratif</td>
+                        <td>0 $</td>
+                        <td>
+                            Fonctionnalités Canva Pro, jusqu’à 50 membres
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pro+ (équipes ou particuliers)</td>
+                        <td>26 $/mois ou 260 $/an</td>
+                        <td>
+                            Administration d’équipe, plus de jetons d’IA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Entreprise</td>
+                        <td>Sur devis</td>
+                        <td>
+                            Authentification unique (SSO), assistance prioritaire
+                            <a href="#ref-04">[4]</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Canva Campus (postsecondaire)</td>
+                        <td>Sur devis</td>
+                        <td>
+                            Fonctionnalités Entreprise et accès « premium » pour les étudiants
+                            <a href="#ref-05">[5]</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3 id="maturite">Maturité du logiciel (ligne de temps)</h3>
+            <!-- 
+      • Âge du logiciel
+      • Année en affaires de l'entreprise
+      • Nombre de mois depuis la dernière mise à jour
+      • Le logiciel est-il encore supporté par le développeur ou le créateur
+      -->
+            <!-- https://www.jonashietala.se/blog/2024/08/25/a_simple_timeline_using_css_flexbox/ -->
+            <div class="timeline">
+                <div class="events">
+                    <div class="timeline-event">
+                        <time datetime="1987">1987</time>
+                        <div class="timeline-description">
+                            <p>
+                                Fondation de la société Serif au Royaume-Uni
+                                <a href="#ref-06">[6]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="1990">1990</time>
+                        <div class="timeline-description">
+                            <p>
+                                Publication de PagePlus, logiciel de mise en pages de Serif qui précède Affinity
+                                Publisher <a href="#ref-07">[7]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2014-10">2014/10</time>
+                        <div class="timeline-description">
+                            <p>
+                                Publication d’Affinity Designer V1 
+                                <a href="#ref-08">[8]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2015-07">2015/07</time>
+                        <div class="timeline-description">
+                            <p>
+                                Publication d’Affinity Photo V1 
+                                <a href="#ref-09">[9]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2019-06">2019/06</time>
+                        <div class="timeline-description">
+                            <p>
+                                Affinity Publisher V1 est publié 
+                                <a href="#ref-10">[10]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2022-11">2022/11</time>
+                        <div class="timeline-description">
+                            <p>
+                                Lancement de la V2 de la suite Affinity
+                                <a href="#ref-10">[10]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2024-03">2024/03</time>
+                        <div class="timeline-description">
+                            <p>
+                                Acquisition par Canva (société australienne) de Serif
+                                <a href="#ref-11">[11]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2025-10">2025/10</time>
+                        <div class="timeline-description">
+                            <p>
+                                Lancement de la version unifiée d’Affinity, qui fusionne les trois logiciels
+                                <a href="#ref-12">[12]</a>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2026-09">2026/09</time>
+                        <div class="timeline-description">
+                            <p>
+                                Mise à jour pénultième.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2026-10">2026/10</time>
+                        <div class="timeline-description">
+                            <p>
+                                Mise à jour la plus récente
+                                <a href="#ref-13">[13]</a>.
+                                Le rythme de 1 à 2 mois montre que le logiciel est toujours entretenu.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="timeline-event">
+                        <time datetime="2026-11">2026/11</time>
+                        <div class="timeline-description">
+                            <p>
+                                Lancement prévu de la version iPad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h3 id="interoperabilite">Interopérabilité</h3>
+            <!-- 
+      Critères qui impliquent la capacité du logiciel à s'harmoniser avec le système déjà en place et sa faculté de
+      fonctionner conjointement avec d'autres ressources logicielles et matérielles.
+      • Compatibilité avec les plateformes et systèmes d'exploitation
+      • Intégration Web
+      • Intégration à d'autres applications
+      • Dépendances logicielles ou matérielles
+      -->
+            <h4>Systèmes compatibles</h4>
+            <ul>
+                <li>
+                    Windows
+                </li>
+                <li>
+                    macOS
+                    <a href="#ref-14">[14]</a>
+                </li>
+                <li>
+                    iPad : lancement prévu le 2 novembre 2026
+                    <a href="#ref-15">[15]</a>.
+                </li>
+            </ul>
+            <p>
+                Le logiciel n’est pas disponible sur Linux
+                <a href="#ref-16">[16]</a>,
+                mais des initiatives communautaires utilisent WINE pour en permettre l’installation
+                <a href="#ref-17">[17]</a>
+                <a href="#ref-18">[18]</a>.
+            </p>
+            <h4>Intégration web</h4>
+            <p>
+                On peut utiliser le logiciel hors ligne, mais cela exige une connexion au compte Canva tous les 30 jours
+                <a href="#ref-19">[19]</a>.
+                Les fonctions d’IA
+                <a href="#ref-20">[20]</a>
+                et l’intégration des identités visuelles (kits de marque) sur Canva
+                <a href="#ref-21">[21]</a>
+                demandent elles aussi une connexion.
+            </p>
+            <h4>Intégration à d’autres applications</h4>
+            <ul>
+                <li>
+                    Réutilisation des identités visuelles de Canva (kits de marque)
+                    <a href="#ref-21">[21]</a>.
+                </li>
+                <li>
+                    L’exportation des projets complets est possible vers le stockage infonuagique de Canva, mais
+                    l’importation depuis cet espace ne l’est pas, lui
+                    <a href="#ref-22">[22]</a>.
+                </li>
+                <li>
+                    Intégrations avec Capture One
+                    <a href="#ref-23">[23]</a>
+                    et DaVinci Resolve
+                    <a href="#ref-24">[24]</a>.
+                </li>
+                <li>
+                    L’importation de fichiers InDesign (IDML, INDD) et Publisher (PUB), ainsi que d’autres types de
+                    fichiers propriétaires
+                    <a href="#ref-25">[25]</a>,
+                    est prise en charge, mais l’exportation vers ces formats n’est pas possible
+                    <a href="#ref-26">[26]</a>.
+                </li>
+            </ul>
+            <h4>Dépendances</h4>
+            <p>
+                Un compte Canva est requis pour utiliser le logiciel, même pour la version gratuite.
+            </p>
+            <h3 id="soutien-technique">Soutien technique</h3>
+            <!-- 
+      Critères qui mesurent l'aide disponible pour les utilisateurs du logiciel.
+      • Accès à une version de démonstration
+      • Assistance technique
+      • Documentation
+      • Tutoriel
+      • Communauté
+      -->
+            <p>
+                Seuls les comptes avec un abonnement Entreprise bénéficient d’une assistance technique de l’équipe
+                Canva.
+            </p>
+            <ul>
+                <li>
+                    Documentation :
+                    <a href="https://www.affinity.studio/fr_fr/help/">https://www.affinity.studio/fr_fr/help/</a>
+                </li>
+                <li>
+                    Tutoriels officiels :
+                    <a href="https://www.youtube.com/AffinitySuite">https://www.youtube.com/AffinitySuite</a> et
+                    <a
+                        href="https://www.affinity.studio/fr_fr/resources">https://www.affinity.studio/fr_fr/resources</a>
+                </li>
+                <li>
+                    Blogue de formation :
+                    <a href="https://www.affinity.studio/fr_fr/blog">https://www.affinity.studio/fr_fr/blog</a>
+                </li>
+                <li>
+                    Aide intégrée : modules d’apprentissage interactifs téléchargeables dans le logiciel
+                    (<a href="#fig-01">Figure 1</a>)
+                </li>
+            </ul>
+            <h4>Communauté</h4>
+            <ul>
+                <li>
+                    Discord :
+                    <a
+                        href="https://discord.com/invite/officialaffinity">https://discord.com/invite/officialaffinity</a>
+                </li>
+                <li>
+                    Reddit :
+                    <a href="https://www.reddit.com/r/Affinity/">https://www.reddit.com/r/Affinity/</a>
+                </li>
+                <li>
+                    Réseaux sociaux officiels :
+                    <a href="https://www.facebook.com/affinity">Facebook</a>,
+                    <a href="https://www.instagram.com/affinity/">Instagram</a>,
+                    <a href="https://www.threads.com/@affinity">Threads</a>,
+                    <a href="https://www.tiktok.com/@weareaffinity">TikTok</a>,
+                    <a href="https://x.com/Affinity">X (Twitter)</a>,
+                    <a href="https://www.youtube.com/AffinitySuite">YouTube</a>
+                </li>
+                <li>
+                    Forum officiel d’Affinity désactivé depuis l’acquisition par Canva :
+                    <a href="https://forum.affinity.serif.com/">https://forum.affinity.serif.com/</a>
+                </li>
+                <li>
+                    Il existe plusieurs tutoriels et guides non officiels, par exemple
+                    <a href="https://mikeloader.ca/2025/12/21/expert-guide-to-affinity-by-canva-3-0/">
+                        https://mikeloader.ca/2025/12/21/expert-guide-to-affinity-by-canva-3-0/
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="criteres-techniques">
+            <h2>2. Critères techniques</h2>
+            <h3>Fonctionnalités</h3>
+            <!-- • Description des fonctionnalités du logiciel (veuillez être le plus exhaustif possible) -->
+            <p>
+                Affinity réunit trois logiciels de la suite Affinity 2,0 (qui traitaient la retouche des photos, le
+                dessin vectoriel et la mise en pages) dans un seul logiciel. Ces trois fonctions correspondent aux
+                <strong>Studios</strong> affichés par défaut sous la barre de menu qui sont des configurations d’outils
+                dans la barre à gauche. L’utilisateur peut « customiser » les Studios et créer les siens
+                (<a href="#fig-02">Figure 2</a>).
+                <strong>Ce rapport traite des fonctionnalités du Studio Mise en page, car c’est le plus pertinent pour
+                    l’édition numérique.</strong>
+            </p>
+            <!-- Les balises <strong> https://www.w3schools.com/tags/tag_strong.asp 
+                sont censées améliorer la « scanabilité » https://www.nngroup.com/articles/applying-writing-guidelines-web-pages/ -->
+            <h4>Document</h4>
+            <p>
+                À la création d’un document, on établit les dimensions de la page, l’orientation, les unités, le format
+                de la couleur (ex. RVB ou CMJN), et les marges
+                (<a href="#fig-03">Figure 3</a>).
+            </p>
+            <p>
+                Le travail s’organise autour de la page et de la <strong>planche</strong>, qui représente deux pages en
+                vis-à-vis pour un livre ou qui en représente plusieurs s’il s’agit d’un dépliant
+                <a href="#ref-27">[27]</a>.
+                Le panneau « Pages » permet d’ajouter, de déplacer, de copier et de supprimer les pages ainsi que de
+                configurer les planches
+                (<a href="#fig-04">Figure 4</a>).
+            </p>
+
+            <h4>Interface</h4>
+            <p>
+                L’interface comprend une barre supérieure qui change de contrôles selon l’outil actif, et une barre
+                contextuelle inférieure qui affiche une courte directive d’utilisation
+                (<a href="#fig-05">Figure 5</a>).
+                Des panneaux que l’on peut ancrer et configurer encadrent l’espace de travail, où chaque document
+                s’ouvre dans un onglet. À droite, on trouve deux sélecteurs de couleur et les réglages des traits
+                (bordures)
+                (<a href="#fig-06">Figure 6</a>).
+                Le panneau « <strong>Calques</strong> » liste les objets du document et permet de changer leur ordre
+                d’empilement, de les grouper, de les masquer et de les verrouiller
+                (<a href="#fig-07">Figure 7</a>).
+                D’autres panneaux servent à transformer les dimensions et l’axe de rotation des objets, à naviguer
+                (zoom) et à consulter l’historique des changements
+                (<a href="#fig-08">Figure 8</a>).
+                Le studio offre aussi des règles, des grilles et l’aimantation pour positionner les objets, ainsi qu’un
+                mode d’aperçu avant publication.
+            </p>
+            <p>
+                Les <strong>raccourcis</strong> clavier sont modifiables, et il est possible d’écrire les
+                <strong>Scripts</strong> en JavaScript
+                <a href="#ref-28">[28]</a>
+                afin d’automatiser les tâches répétitives. Si le logiciel se plante, il peut rétablir les documents non
+                enregistrés.
+            </p>
+            <p>
+                Les <strong>maquettes</strong> (pages types) permettent de réutiliser des objets sur plusieurs pages,
+                comme des en-têtes, des pieds de page
+                (<a href="#fig-09">Figure 9</a>),
+                des cadres de texte ou des images. Si l’on modifie la maquette, toutes les pages qui l’utilisent se
+                modifient elles aussi. Un document peut comporter plusieurs maquettes. Les <strong>champs</strong>,
+                comme le numéro de page ou le nom de section, permettent d’insérer une variable qui se met à jour sur
+                chaque page. On peut aussi diviser le document en <strong>sections</strong>, chacune ayant sa propre
+                numérotation.
+            </p>
+
+            <h4>Texte</h4>
+            <p>
+                Le texte se place dans des zones de texte, des formes, des tracés ou en texte artistique. On peut relier
+                les zones pour que le texte s’écoule de l’une à l’autre. Un habillage permet de contourner des images ou
+                d’autres objets dans la page
+                (<a href="#fig-10">Figure 10</a>).
+                Affinity distingue trois types de <strong>style de texte</strong> : Paragraphe, Caractère et Groupe. Ces
+                styles peuvent s’appuyer sur d’autres et ainsi y hériter de ses attributs.
+            </p>
+            <p>
+                La mise en forme des paragraphes inclut l’interlignage, l’espacement entre paragraphes, les retraits,
+                les tabulations et les listes à plusieurs niveaux. Le logiciel permet aussi des <strong>effets
+                    typographiques décoratifs</strong> pour les mots initiaux, les lettrines (les lettres initiales d’un
+                paragraphe)
+                <a href="#ref-29">[29]</a>
+                ainsi que les bordures et le remplissage en arrière-plan
+                <a href="#ref-30">[30]</a>.
+                Il permet également d’appliquer un alignement visuel
+                <a href="#ref-31">[31]</a>
+                et des <strong>césures</strong> (c’est-à-dire les coupures des mots à la fin de la ligne par l’insertion
+                d’un trait d’union)
+                <a href="#ref-32">[32]</a>, qui corrigent l’apparence des bords du texte
+                (<a href="#fig-11">Figure 11</a>).
+            </p>
+            <p>
+                Pour ce qui est du caractère (ou mots, lignes et phrases à l’intérieur d’un paragraphe), Affinity permet
+                d’y ajouter les indices et les exposants, d’en ajuster l’interlettrage et le crénage (ce qu’on définit
+                par l’<strong>espacement entre les caractères</strong>)
+                <a href="#ref-33">[33]</a>,
+                et d’y installer et d’y appliquer des <strong>polices variables</strong> (qui offrent des combinaisons
+                d’épaisseurs et de
+                largeurs différentes)
+                <a href="#ref-34">[34]</a>
+                (<a href="#fig-12">Figure 12</a>).
+            </p>
+            <p>
+                Le logiciel comporte encore bien d’autres outils d’édition, comme l’affichage des marques de texte, la
+                recherche et le remplacement, les statistiques de document (le nombre de mots, de caractères, de lignes
+                ou de paragraphes) <a href="#ref-35">[35]</a> et offre également l’option d’ajouter des
+                <strong>dictionnaires</strong> orthographiques et de césure de LibreOffice <a href="#ref-36">[36]</a>.
+            </p>
+            <h4>Structure et navigation</h4>
+            <p>
+                Le logiciel peut générer une <strong>table des matières</strong> à partir des styles appliqués aux
+                titres du document (<a href="#fig-13">Figure 13</a>). Ses entrées peuvent devenir des signets PDF. Il
+                est également possible de construire un <strong>index</strong> hiérarchique, en ajoutant des marques
+                d’index dans le document et en les reliant à un des termes.</p>
+            <p>
+                Affinity permet d’insérer des <strong>liens hypertextes</strong> qui renvoient vers une adresse web (<a
+                    href="#fig-14">Figure 14</a>), une page, une section ou un élément précis du document. On définit
+                ces derniers par des <strong>ancres</strong>, qui marquent un emplacement nommé et qui peuvent devenir
+                des signets à l’export en PDF ou en EPUB. De façon semblable, les <strong>références croisées</strong>
+                renvoient à une ancre, à un paragraphe ou à une marque d’index. Leur texte peut inclure des champs pour
+                rester à jour même si l’emplacement de la cible change, et elles peuvent générer un hyperlien. Le
+                logiciel propose trois types de <strong>notes</strong> : de bas de page, en marge et de fin (regroupées
+                à la fin d’une section ou d’un document) <a href="#ref-37">[37]</a>.
+            </p>
+            <h4>Importation de contenu</h4>
+            <p>
+                Le gestionnaire de ressources importe du texte aux formats TXT, RTF et DOCX
+                <a href="#ref-38">[38]</a>,
+                de même que des images
+                (<a href="#fig-15">Figure 15</a>).
+                Les images peuvent aussi provenir d’une URL ou d’une recherche dans les photothèques en ligne Pexels et
+                Pixabay. L’utilisateur choisit d’<strong>intégrer ou de lier</strong> les fichiers. Intégré, le fichier
+                rend le document autonome. Lié, il reste à l’extérieur et le document se met à jour s’il change
+                <a href="#ref-39">[39]</a>.
+                Les cadres d’image les recadrent et les positionnent sans modifier le fichier source. Le studio permet
+                aussi de créer des tableaux ou de les importer depuis Microsoft Excel ou LibreOffice Calc, d’en trier
+                les données et d’y enregistrer des formats personnalisés sous forme de modèles.
+            </p>
+            <h4>Exportation</h4>
+            <p>
+                Le panneau « Livre » permet d’assembler plusieurs documents Affinity (AF) en chapitres ou en pages
+                isolées
+                (<a href="#fig-16">Figure 16</a>).
+                Il est possible de synchroniser les styles de texte et les maquettes de l’ensemble du projet pour
+                obtenir une présentation cohérente.
+            </p>
+            <p>
+                Le <strong>Contrôle en amont</strong> vérifie qu’un document s’exportera comme prévu. Il liste chaque
+                problème et propose parfois un bouton « Corriger ». Il couvre notamment les polices ou les caractères
+                manquants, les images de faible résolution ou celles dont les liens sont rompus, le texte en
+                débordement, les couleurs RVB ou CMJ inattendues, les références, les tables ou les index périmés, etc.
+                <a href="#ref-40">[40]</a>.
+                L’utilisateur peut ajouter ses propres commentaires de contrôle sur des objets (par exemple, pour
+                vérifier les droits sur une image) avant la publication
+                (<a href="#fig-17">Figure 17</a>).
+            </p>
+            <h3>Utilisabilité</h3>
+            <!-- • Facilité d'installation
+      • Facilité d'utilisation
+      • Facilité d'apprentissage  -->
+            <h4>Installation</h4>
+            <p>L’installation et la configuration sont simples et ne demandent pas beaucoup de temps : on télécharge un
+                .dmg (MacOS) ou un .exe (Windows)
+                <a href="#ref-41">[41]</a>.
+                Sous Windows, il est également possible de télécharger le logiciel depuis le Microsoft Store ou
+                d’utiliser Winget
+                <a href="#ref-42">[42]</a>.
+                Il faut prévoir 1 à 2,5 Go d’espace sur son disque dur
+                <a href="#ref-14">[14]</a>.
+            </p>
+            <h4>Utilisation et apprentissage</h4>
+            <p>Les outils d’Affinity suivent les conventions des logiciels Adobe (Photoshop, Illustrator, InDesign) en
+                ce qui concerne la barre d’outils à gauche, les panneaux ancrables à droite et les raccourcis clavier
+                similaires. Un utilisateur familier de ces logiciels peut donc facilement repérer les fonctions sans
+                avoir à tout réapprendre. Les icônes spécifiques à Affinity sont l’exception, mais on peut les découvrir
+                grâce aux infobulles qui fournissent une description précise de chaque outil. Chaque description
+                comprend également un bouton « En savoir plus… »  qui entraîne l’ouverture d’une fenêtre affichant la
+                page web de documentation complète de l’outil
+                (<a href="#fig-18">Figure 18</a>).
+            </p>
+        </section>
+        <section id="evaluation">
+            <h2>3. Évaluation</h2>
+            <!-- 
+      • Points positifs
+      • Points négatifs
+      • Autres remarques
+      -->
+            <h3>Points positifs</h3>
+            <ul>
+                <li>
+                    Solution complète et <strong>gratuite</strong> pour la mise en pages et l’édition numérique
+                </li>
+                <li>
+                    Lit les fichiers propriétaires Adobe ; l’interface et les raccourcis sont similaires
+                </li>
+                <li>
+                    Facile et agréable à utiliser, même pour les non-initiés
+                </li>
+            </ul>
+            <h3>Points négatifs</h3>
+            <ul>
+                <li>
+                    Malgré l’engagement de Canva à créer des logiciels accessibles
+                    <a href="#ref-43">[43]</a>,
+                    les PDF exportés d’Affinity ne sont pas conformes aux normes attendues par la communauté. Les
+                    balises pour les lecteurs d’écran ne traitent que les en-têtes, les paragraphes et le texte
+                    alternatif, mais pas pour les tableaux ni les listes. De plus, il est nécessaire d’effectuer des
+                    modifications importantes après l’exportation afin de regrouper les paragraphes exportés en lignes
+                    distinctes
+                    <a href="#ref-44">[44]</a>.
+                </li>
+                <li>
+                    La traduction de la version française de l’interface comporte des erreurs
+                    (<a href="#fig-19">Figure 19</a>).
+                </li>
+                <li>
+                    Il n’y a aucune version Linux ni Android.
+                </li>
+            </ul>
+            <h3>Autres remarques</h3>
+            <p>
+                Le stockage infonuagique inclus avec un compte Canva ne convient pas aux fichiers AF d’Affinity. Cet
+                espace ne sert qu’à la conservation des créations finies et converties pour l’écosystème web de Canva.
+            </p>
+            <p>
+                De plus, Affinity n’offre pas la coédition en temps réel (contrairement à Canva). Cela veut dire que les
+                flux de travail en équipe doivent passer par un serveur où un individu emprunte le fichier, puis le
+                remet à la disposition des autres (check in/out), ce qui peut occasionner des problèmes de contrôle de
+                version si le fichier n’est pas verrouillé et si deux personnes le modifient en même temps. Affinity
+                n’offre pas plus la comparaison de versions de deux fichiers pour résoudre ou fusionner les conflits de
+                version.
+            </p>
+            <p>
+                Contrairement à la V2 d’Affinity Publisher, qui était vendue sous une licence perpétuelle, Canva offre
+                Affinity en tant que service (SaaS). Si Canva modifie ses conditions au fil du temps, l’accès au
+                logiciel, et donc aux fichiers AF, pourrait se trouver restreint. Puisqu’Adobe ne lit pas ce format (et
+                Affinity n’exporte pas en formats Adobe), l’utilisateur n’aurait pas aucun moyen à sa disposition pour
+                rouvrir ses fichiers.
+            </p>
+            <p>
+                Canva prévoit une entrée en bourse
+                <a href="#ref-45">[45]</a>
+                <a href="#ref-46">[46]</a>
+                prochainement, ce qui peut pousser l’entreprise à repenser son offre gratuite. La communauté affiche une
+                certaine méfiance : un utilisateur sur le forum Hacker News lance cette mise en garde : « We all know
+                that free versions like this are exercises in frog boiling »
+                <a href="#ref-47">[47]</a>.
+            </p>
+        </section>
+        <section id="capt-ecrans">
+            <h2>4. Copies d'écrans</h2>
+            <figure id="fig-01">
+                <img src="img/fig-01.png" alt="Modules d’apprentissage">
+                <figcaption>
+                    Figure 1 : Modules d’apprentissage interactifs téléchargeables dans le logiciel
+                </figcaption>
+            </figure>
+            <figure id="fig-02">
+                <img src="img/fig-02.png" alt="Création d’un nouveau Studio">
+                <figcaption>
+                    Figure 2 : Création d’un nouveau Studio
+                </figcaption>
+            </figure>
+            <figure id="fig-03">
+                <img src="img/fig-03.png" alt="Création d’un document">
+                <figcaption>
+                    Figure 3 : Création d’un document
+                </figcaption>
+            </figure>
+            <figure id="fig-04">
+                <img src="img/fig-04.png" alt="Panneau « Pages »">
+                <figcaption>
+                    Figure 4 : Panneau « Pages »
+                </figcaption>
+            </figure>
+            <figure id="fig-05">
+                <img src="img/fig-05.png" alt="Barre contextuelle inférieure">
+                <figcaption>
+                    Figure 5 : Barre contextuelle inférieure
+                </figcaption>
+            </figure>
+            <figure id="fig-06">
+                <img src="img/fig-06.png" alt="Sélecteur de couleur">
+                <figcaption>
+                    Figure 6 : Sélecteur de couleur
+                </figcaption>
+            </figure>
+            <figure id="fig-07">
+                <img src="img/fig-07.png" alt="Panneau « Calques »">
+                <figcaption>
+                    Figure 7 : Panneau « Calques »
+                </figcaption>
+            </figure>
+            <figure id="fig-08">
+                <img src="img/fig-08.png" alt="Panneau « Historique »">
+                <figcaption>
+                    Figure 8 : Panneau « Historique »
+                </figcaption>
+            </figure>
+            <figure id="fig-09">
+                <img src="img/fig-09.png" alt="Utilisation d’une maquette pour la réutilisation d’un pied de page">
+                <figcaption>
+                    Figure 9 : Utilisation d’une maquette pour la réutilisation d’un pied de page
+                </figcaption>
+            </figure>
+            <figure id="fig-10">
+                <img src="img/fig-10.png" alt="Habillage du texte autour d’une image">
+                <figcaption>
+                    Figure 10 : Habillage du texte autour d’une image
+                </figcaption>
+            </figure>
+            <figure id="fig-11">
+                <img src="img/fig-11.png" alt="Césure des paragraphes">
+                <figcaption>
+                    Figure 11 : Césure des paragraphes
+                </figcaption>
+            </figure>
+            <figure id="fig-12">
+                <img src="img/fig-12.png" alt="Ajustement d’une police variable">
+                <figcaption>
+                    Figure 12 : Ajustement d’une police variable
+                </figcaption>
+            </figure>
+            <figure id="fig-13">
+                <img src="img/fig-13.png" alt="Génération d’une table des matières">
+                <figcaption>
+                    Figure 13 : Génération d’une table des matières
+                </figcaption>
+            </figure>
+            <figure id="fig-14">
+                <img src="img/fig-14.png" alt="Insertion d’un lien hypertexte renvoyant à une URL">
+                <figcaption>
+                    Figure 14 : Insertion d’un lien hypertexte renvoyant à une URL
+                </figcaption>
+            </figure>
+            <figure id="fig-15">
+                <img src="img/fig-15.png" alt="Gestionnaire de ressources pour les images et les textes">
+                <figcaption>
+                    Figure 15 : Gestionnaire de ressources pour les images et les textes
+                </figcaption>
+            </figure>
+            <figure id="fig-16">
+                <img src="img/fig-16.png" alt="Panneau « Livre »">
+                <figcaption>
+                    Figure 16 : Panneau « Livre »
+                </figcaption>
+            </figure>
+            <figure id="fig-17">
+                <img src="img/fig-17.png"
+                    alt="Panneau « Contrôle en amont » et définition d’un commentaire de contrôle sur un objet">
+                <figcaption>
+                    Figure 17 : Panneau « Contrôle en amont » et définition d’un commentaire de contrôle sur un objet
+                </figcaption>
+            </figure>
+            <figure id="fig-18">
+                <img src="img/fig-18.png"
+                    alt="Infobulle et fenêtre de documentation complète de l’outil Texte artistique">
+                <figcaption>
+                    Figure 18 : Infobulle et fenêtre de documentation complète de l’outil Texte artistique
+                </figcaption>
+            </figure>
+            <figure id="fig-19">
+                <img src="img/fig-19.png"
+                    alt="Exemple d’erreur de traduction : « Factory settings » est traduit comme « Réglages d’usine »">
+                <figcaption>
+                    Figure 19 : Exemple d’erreur de traduction : « Factory settings » est traduit comme « Réglages
+                    d’usine »
+                </figcaption>
+            </figure>
+        </section>
+        <section id="references">
+            <h2>5. Références</h2>
+            <ol>
+                <li id="ref-01" class="ref">
+                    TonyB, « What programming Language is Affinity Designer written in? »,
+                    Affinity Forum, 28 octobre 2016.
+                    <a
+                        href="https://forum.affinity.serif.com/index.php?/topic/27043-what-programming-language-is-affinity-designer-written-in/">
+                        https://forum.affinity.serif.com/index.php?/topic/27043-what-programming-language-is-affinity-designer-written-in/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-02" class="ref">
+                    « Senior UI Engineer - Objective-C/C++ (iOS/macOS) - Affinity @ Canva »,
+                    Square Peg Job Board, 29 janvier 2026.
+                    <a
+                        href="https://squarepeg.getro.com/companies/canva/jobs/66328281-senior-ui-engineer-objective-c-c-ios-macos-affinity">
+                        https://squarepeg.getro.com/companies/canva/jobs/66328281-senior-ui-engineer-objective-c-c-ios-macos-affinity
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-03" class="ref">
+                    « Conditions d’éligibilité pour Canva Éducation », Canva.
+                    <a href="https://www.canva.com/fr_fr/education/condition-eligibilite/">
+                        https://www.canva.com/fr_fr/education/condition-eligibilite/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-04" class="ref">
+                    « Abonnements et tarifs », Canva.
+                    <a href="https://www.canva.com/fr_ca/tarification/">
+                        https://www.canva.com/fr_ca/tarification/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-05" class="ref">
+                    « Canva pour l’enseignement supérieur », Canva.
+                    <a href="https://www.canva.com/fr_fr/enseignement-superieur/">
+                        https://www.canva.com/fr_fr/enseignement-superieur/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-06" class="ref">
+                    « SERIF (EUROPE) LIMITED », Gov.uk, 25 juin 2026.
+                    <a href="https://find-and-update.company-information.service.gov.uk/company/02117968">
+                        https://find-and-update.company-information.service.gov.uk/company/02117968
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-07" class="ref">
+                    « PagePlus », Wikipedia, 24 septembre 2026.
+                    <a href="https://en.wikipedia.org/w/index.php?title=PagePlus">
+                        https://en.wikipedia.org/w/index.php?title=PagePlus
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-08" class="ref">
+                    Affinity, « Post », LinkedIn, 2 octobre 2024.
+                    <a
+                        href="https://www.linkedin.com/posts/happy-birthday-to-us-affinity-designer-share-7247177427502649346-sUg-/">
+                        https://www.linkedin.com/posts/happy-birthday-to-us-affinity-designer-share-7247177427502649346-sUg-/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-09" class="ref">
+                    « Affinity Photo », Wikipedia, 21 octobre 2026.
+                    <a href="https://en.wikipedia.org/w/index.php?title=Affinity_Photo">
+                        https://en.wikipedia.org/w/index.php?title=Affinity_Photo
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-10" class="ref">
+                    « Affinity Publisher », Wikipedia, 20 août 2026.
+                    <a href="https://en.wikipedia.org/w/index.php?title=Affinity_Publisher">
+                        https://en.wikipedia.org/w/index.php?title=Affinity_Publisher
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-11" class="ref">
+                    N. Bonyhady, « Canva’s billion-dollar bet on a 37-year-old Nottingham company »,
+                    Australian Financial Review, 26 mars 2024.
+                    <a
+                        href="https://www.afr.com/technology/canva-s-billion-dollar-bet-on-a-37-year-old-nottingham-company-20240321-p5fea0">
+                        https://www.afr.com/technology/canva-s-billion-dollar-bet-on-a-37-year-old-nottingham-company-20240321-p5fea0
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-12" class="ref">
+                    A. Hewson, « Introducing the all-new Affinity: Professional design, now free for everyone »,
+                    Canva Newsroom, 29 octobre 2025.
+                    <a href="https://www.canva.com/newsroom/news/all-new-affinity/">
+                        https://www.canva.com/newsroom/news/all-new-affinity/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-13" class="ref">
+                    « Notes de version de Septembre à Novembre 2026 », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_ca/help/release-notes/">
+                        https://www.affinity.studio/fr_ca/help/release-notes/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-14" class="ref">
+                    « Configuration système requise pour Affinity », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/introduction-system-requirements/">
+                        https://www.affinity.studio/fr_fr/help/introduction-system-requirements/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-15" class="ref">
+                    « App Affinity by Canva - App Store ».
+                    <a href="https://apps.apple.com/us/app/affinity-by-canva/id6751323445">
+                        https://apps.apple.com/us/app/affinity-by-canva/id6751323445
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-16" class="ref">
+                    « Affinity est-il disponible sur Linux, Android ou Chromebooks ? », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/compatibility-with-linux-android-chromebooks/">
+                        https://www.affinity.studio/fr_fr/help/compatibility-with-linux-android-chromebooks/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-17" class="ref">
+                    Mattscreative, ryzendew/Linux-Affinity-Installer, 1 novembre 2026, Python.
+                    <a href="https://github.com/ryzendew/Linux-Affinity-Installer">
+                        https://github.com/ryzendew/Linux-Affinity-Installer
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-18" class="ref">
+                    seapear, seapear/AffinityOnLinux, 22 août 2026, Python.
+                    <a href="https://github.com/seapear/AffinityOnLinux">
+                        https://github.com/seapear/AffinityOnLinux
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-19" class="ref">
+                    « Do I need to be online to authenticate Affinity? », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/affinity-online-authenticate/">
+                        https://www.affinity.studio/fr_fr/help/affinity-online-authenticate/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-20" class="ref">
+                    « Dois-je être en ligne pour utiliser les fonctionnalités IA dans Affinity ? »,
+                    Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/canva-ai-online/">
+                        https://www.affinity.studio/fr_fr/help/canva-ai-online/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-21" class="ref">
+                    « Utilisez votre kit de marque dans Affinity », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/use-brandkits-affinity/">
+                        https://www.affinity.studio/fr_fr/help/use-brandkits-affinity/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-22" class="ref">
+                    « Exporter vers Canva », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/sharing-export-to-canva/">
+                        https://www.affinity.studio/fr_fr/help/sharing-export-to-canva/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-23" class="ref">
+                    « Modification du contenu Capture One dans Affinity », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/addons-capture-one/">
+                        https://www.affinity.studio/fr_fr/help/addons-capture-one/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-24" class="ref">
+                    « Importer du contenu Affinity dans DaVinci Resolve », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/extras-davinci-affinity/">
+                        https://www.affinity.studio/fr_fr/help/extras-davinci-affinity/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-25" class="ref">
+                    « Formats de fichiers pris en charge », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/appendix-fileformat/">
+                        https://www.affinity.studio/fr_fr/help/appendix-fileformat/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-26" class="ref">
+                    « Importation de documents InDesign (IDML et INDD) », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/get-started-import-in-design/">
+                        https://www.affinity.studio/fr_fr/help/get-started-import-in-design/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-27" class="ref">
+                    « À propos des pages et des planches », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/pages-about-pages/">
+                        https://www.affinity.studio/fr_fr/help/pages-about-pages/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-28" class="ref">
+                    « Créer des scripts dans Affinity », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/scripting-in-affinity/">
+                        https://www.affinity.studio/fr_fr/help/scripting-in-affinity/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-29" class="ref">
+                    « Lettrines », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-dropcaps/">
+                        https://www.affinity.studio/fr_fr/help/text-dropcaps/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-30" class="ref">
+                    « Décorations », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-decorations/">
+                        https://www.affinity.studio/fr_fr/help/text-decorations/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-31" class="ref">
+                    « Alignement visuel », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-optical-alignment/">
+                        https://www.affinity.studio/fr_fr/help/text-optical-alignment/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-32" class="ref">
+                    « Césure », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-hyphenation/">
+                        https://www.affinity.studio/fr_fr/help/text-hyphenation/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-33" class="ref">
+                    « Interlettrage et crénage », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-tracking-kerning/">
+                        https://www.affinity.studio/fr_fr/help/text-tracking-kerning/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-34" class="ref">
+                    « Polices variables », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-variable-fonts/">
+                        https://www.affinity.studio/fr_fr/help/text-variable-fonts/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-35" class="ref">
+                    « Statistiques de document », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-document-stats/">
+                        https://www.affinity.studio/fr_fr/help/text-document-stats/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-36" class="ref">
+                    « Gérer des dictionnaires orthographiques et de césure », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-hyphenation-installing/">
+                        https://www.affinity.studio/fr_fr/help/text-hyphenation-installing/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-37" class="ref">
+                    « À propos des notes », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/advanced-about-notes/">
+                        https://www.affinity.studio/fr_fr/help/advanced-about-notes/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-38" class="ref">
+                    « Importer du texte », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/text-import-text/">
+                        https://www.affinity.studio/fr_fr/help/text-import-text/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-39" class="ref">
+                    « Intégrer ou lier », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/media-embedding-vs-linking/">
+                        https://www.affinity.studio/fr_fr/help/media-embedding-vs-linking/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-40" class="ref">
+                    « Contrôle en amont », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/sharing-preflight/">
+                        https://www.affinity.studio/fr_fr/help/sharing-preflight/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-41" class="ref">
+                    « Installer Affinity sur votre appareil », Centre d’aide Affinity.
+                    <a href="https://www.affinity.studio/fr_fr/help/install-affinity/">
+                        https://www.affinity.studio/fr_fr/help/install-affinity/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-42" class="ref">
+                    Canva, « Affinity Download », winstall.
+                    <a href="https://winstall.app/apps/Canva.Affinity">
+                        https://winstall.app/apps/Canva.Affinity
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-43" class="ref">
+                    « L’accessibilité chez Canva », Canva.
+                    <a href="https://www.canva.com/fr_fr/accessibility/">
+                        https://www.canva.com/fr_fr/accessibility/
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-44" class="ref">
+                    C. Gratzer, « Can Affinity Create Accessible PDFs? The Truth About Accessible PDFs in Affinity »,
+                    15 avril 2026.
+                    <a href="https://www.youtube.com/watch?v=ScKx6WLOs3g">
+                        https://www.youtube.com/watch?v=ScKx6WLOs3g
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-45" class="ref">
+                    « Canva Is Worth $42 Billion. When Does It IPO? », NonPublic, 13 octobre 2026.
+                    <a href="https://www.nonpublic.com/resources/canva-is-worth-usd42-billion-when-does-it-ipo">
+                        https://www.nonpublic.com/resources/canva-is-worth-usd42-billion-when-does-it-ipo
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-46" class="ref">
+                    « Canva IPO: What UK investors should know », CMC Markets.
+                    <a href="https://www.cmcmarkets.com/en-gb/ipo-trading/canva-ipo">
+                        https://www.cmcmarkets.com/en-gb/ipo-trading/canva-ipo
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+                <li id="ref-47" class="ref">
+                    dangus, « Affinity Studio now free », Hacker News, 31 octobre 2025.
+                    <a href="https://news.ycombinator.com/item?id=45761445">
+                        https://news.ycombinator.com/item?id=45761445
+                    </a>
+                    [Consulté le 3 novembre 2026]
+                </li>
+            </ol>
+        </section>
+    </main>
 </body>
+
 </html>
