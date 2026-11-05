@@ -1,0 +1,64 @@
+body {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: #222222;
+  line-height: 1.7em;
+
+  max-width: 680px;
+  margin: 4em auto;
+  padding: 0em 2em;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* https://stackoverflow.com/questions/15716030/numbering-an-ordered-list-ol-like-an-array-with-brackets-around-the-numbers */
+#ref-list {
+  list-style-type: none;
+  padding-left: none;
+  margin-left: none;
+}
+
+.ref::before {
+  content: "[" counter(list-item) "] ";
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 10px;
+}
+
+.timeline-event {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 1em;
+}
+
+.timeline-event time {
+  width: 10%;
+  font-weight: bold;
+  flex-shrink: 0;
+}
+
+.timeline-description {
+  flex: 1;
+}
+
+.timeline-description p {
+  margin: 0;
+}
